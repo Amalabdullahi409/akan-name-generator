@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akan Name Generator.</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 30px;
+        text-align: center;
+      }
+      h1 {
+        color: #e50914;
+      }
+      form {
+        margin: 20px auto;
+        max-width: 400px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px whitesmoke;
+        border-radius: 10px;
+      }
+      input,
+      select {
+        padding: 10px;
+        width: 90%;
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        background-color: #e50914;
+
+        cursor: pointer;
+      }
+      #result {
+        color: #333;
+        font-size: 1.2em;
+        margin-top: 20px;
+      }
+      submit button {
+        display: inline-block;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Akan Name Generator</h1>
+    <form id="akan-form">
+      <label for="dob">Birth Date:</label>
+      <input type="date" id="dob" required />
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button type="submit">Generate Akan Name</button>
+    </form>
+    <p id="result"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
